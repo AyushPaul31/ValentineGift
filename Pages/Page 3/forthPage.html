@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classic Proposal</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow:hidden;
+    background: linear-gradient(45deg,#ff9a9e,#fad0c4,#ffd1ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+h1{
+    color:#c9184a;
+    margin-top:10px;
+    font-size:38px;
+}
+
+/* Center image */
+img{
+    width:320px;
+    border-radius:20px;
+    margin:20px 0;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Yes No buttons */
+.buttons{
+    margin-top:10px;
+    display:flex;
+    gap:40px;
+    justify-content:center;
+}
+
+.buttons button{
+    padding:10px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.buttons button:first-child{
+    background:#28a745;
+    color:white;
+}
+.buttons button:last-child{
+    background:#dc3545;
+    color:white;
+}
+
+/* Romantic small badges */
+.romantic{
+    position:absolute;
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:13px;
+    padding:6px 14px;
+    cursor:pointer;
+    white-space:nowrap;
+    box-shadow:0 8px 15px rgba(0,0,0,0.2);
+    animation: float 6s ease-in-out infinite;
+}
+
+.r1{ top:8%; left:80%; }
+.r2{ top:15%; left:10%; }
+.r3{ top:35%; left:75%; }
+.r4{ top:50%; left:15%; }
+.r5{ top:80%; left:80%; }
+.r6{ top:75%; left:8%; }
+.r7{ top:92%; left:50%; }
+
+@keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-10px); }
+}
+
+.watermark{
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:14px;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Do you love meeeeee? 💕</h1>
+
+<img id="image" src="../Assets/smart.gif">
+
+<div class="buttons">
+    <button onclick="yesFunction()">Yes 🤭</button>
+    <button onclick="noFunction()">No 😔</button>
+</div>
+
+<!-- Small romantic pills -->
+<button class="romantic r1" onclick="myFunction()">Thank You to be my Valentine Babe! 💖</button>
+<button class="romantic r2" onclick="myFunction()">Thank You to be my Valentine Babe! 💖</button>
+<button class="romantic r3" onclick="myFunction()">Thank You to be my Valentine Babe! 💖</button>
+<button class="romantic r4" onclick="myFunction()">Thank You to be my Valentine Babe! 💖</button>
+<button class="romantic r5" onclick="myFunction()">Thank You to be my Valentine Babe! 💖</button>
+<button class="romantic r6" onclick="myFunction()">Thank You to be my Valentine Babe! 💖</button>
+<button class="romantic r7" onclick="myFunction()">Thank You to be my Valentine Babe! 💖</button>
+<div
+  style="
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 10px;
+  "
+>
+  Made by Legendary Ayush Roy Paul for my BUBU (Suravi Paul Roy) ❣️
+</div>
+
+
+<script>
+function yesFunction() {
+    window.location.href = "../Page 5/yes.html";
+}
+function noFunction() {
+    window.location.href = "../Page 6/no1.html";
+}
+function myFunction() {
+    window.location.href = "../Page 4/ask.html";
+}
+</script>
+
+</body>
+</html>

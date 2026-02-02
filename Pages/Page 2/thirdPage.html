@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make it Romantic</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Segoe UI, sans-serif;
+    background: linear-gradient(45deg,#ff9a9e,#fad0c4,#ffdde1);
+}
+
+.card{
+    text-align:center;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+    position:relative;
+    width:350px;
+    height:450px;
+}
+
+h2{ color:#ff4d6d; }
+
+#gif{
+    width:250px;
+    border-radius:15px;
+    margin:15px 0;
+}
+
+/* Proper button size */
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    font-size:18px;
+    cursor:pointer;
+    position:absolute;
+    width:90px;
+    height:45px;
+}
+
+#yes{
+    background:#28a745;
+    color:white;
+    bottom:30px;
+    left:60px;
+}
+
+#no{
+    background:#dc3545;
+    color:white;
+    bottom:30px;
+    right:60px;
+}
+
+#valentineBtns{ display:none; }
+
+.watermark{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Will you be my Valentine? ❤️</h2>
+    <img id="gif" src="../Assets/romantic.gif">
+
+    <div id="valentineBtns">
+        <button id="yes">Yes 💖</button>
+        <button id="no">No 😜</button>
+    </div>
+</div>
+
+<div class="watermark">
+  Made by Legendary Ayush Roy Paul for my BUBU (Suravi Paul Roy) ❣️
+</div>
+
+<script src="thirdPage.js"></script>
+</body>
+</html>

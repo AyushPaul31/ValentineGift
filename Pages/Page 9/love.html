@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My BUBU ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    font-family:'Segoe UI', sans-serif;
+    background: linear-gradient(45deg,#ff9a9e,#fad0c4,#ffd1ff);
+}
+
+/* Caption */
+h1{
+    position:fixed;
+    top:20px;
+    width:100%;
+    text-align:center;
+    color:#c9184a;
+    font-size:40px;
+    text-shadow:0 0 15px rgba(255,0,100,0.4);
+}
+
+/* Floating images */
+.photo{
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:20px;
+
+    object-fit: contain;      /* shows full image */
+    object-position: center;
+
+    background: white;       /* fills empty space nicely */
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+    animation: float 12s infinite ease-in-out;
+}
+
+
+/* Different animation delays for randomness */
+.p1{ top:10%; left:15%; animation-delay:0s;}
+.p2{ top:60%; left:10%; animation-delay:2s;}
+.p3{ top:30%; left:70%; animation-delay:4s;}
+.p4{ top:75%; left:75%; animation-delay:6s;}
+.p5{ top:50%; left:40%; animation-delay:8s;}
+.p6{ top:20%; left:45%; animation-delay:10s;}
+.p7{ top:80%; left:25%; animation-delay:1s;}
+.p8{ 
+    top:40%; 
+    left:80%; 
+    animation-delay:3s;
+}
+
+.p9{ top:15%; left:60%; animation-delay:5s;}
+.p10{ top:65%; left:50%; animation-delay:7s;}
+
+
+@keyframes float{
+    0%{ transform: translate(0,0) rotate(0deg); }
+    25%{ transform: translate(40px,-60px) rotate(5deg); }
+    50%{ transform: translate(-40px,40px) rotate(-5deg); }
+    75%{ transform: translate(60px,20px) rotate(3deg); }
+    100%{ transform: translate(0,0) rotate(0deg); }
+}
+</style>
+</head>
+
+<body>
+
+<h1>I love you my BUBU very very much ❤️</h1>
+
+<img src="../Assets/img1.jpeg" class="photo p1">
+<img src="../Assets/img2.jpeg"  class="photo p2">
+<img src="../Assets/img3.jpeg" class="photo p3">
+<img src="../Assets/img4.jpeg" class="photo p4">
+<img src="../Assets/img5.jpeg" class="photo p5">
+<img src="../Assets/img6.jpeg" class="photo p6">
+<img src="../Assets/img7.jpeg" class="photo p7">
+<img src="../Assets/img8.jpeg" class="photo p8">
+<img src="../Assets/img9.jpeg" class="photo p9">
+<img src="../Assets/img10.jpeg"class="photo p10">
+
+</body>
+</html>
